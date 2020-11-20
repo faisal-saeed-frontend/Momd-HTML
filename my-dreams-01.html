@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no  shrink-to-fit=no">
+  <meta name="format-detection" content="telephone=no">
+  <title>Map of my dreams </title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sass/style-en.css">
+</head>
+
+<body>
+  <main>
+
+
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div class="" id="sidebar-wrapper">
+        <div class="sidebar-heading">
+          <a href="">
+            <img src="images/logo-white.png" alt="">
+          </a>
+        </div>
+        <ul class="sidebar-menu">
+          <li class="menu-item">
+            <a class="menu-link active" href="javascript:void(0)">
+              <span class="icon icon-book">
+              </span>
+              My Workbook
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="javascript:void(0)">
+              <span class="icon icon-profile">
+              </span>
+              My Profile
+            </a>
+          </li>
+          <li class="menu-item ">
+            <a class="menu-link logout-link" href="javascript:void(0)">
+              <span class="icon icon-logout">
+              </span>
+              Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <button id="menu-toggle" type="button">
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
+        </button>
+
+        <div class="arrow-steps">
+          <div class="step complete">
+            <span class="item-text"> Tbd Later</span>
+            <span class="arrow-border"></span>
+          </div>
+          <div class="step current">
+            <span class="item-text">My Dreams</span>
+            <span class="arrow-border"></span>
+          </div>
+          <div class="step "> 
+            <span class="item-text">Life Area Survey</span>
+            <span class="arrow-border"></span>
+          </div>
+          <div class="step ">
+            <span class="item-text">Maps of My Dream</span>
+            <span class="arrow-border"></span>
+          </div>
+          <div class="step">
+            <span class="item-text">Care Plan</span>
+            <span class="arrow-border"></span>
+          </div>
+          <div class="step">
+            <span class="item-text">Tips to Success</span>
+            <span class="arrow-border"></span>
+          </div>
+        </div>
+
+        <a href="" class="print-button">
+          <i class="fa fa-lg fa-print"></i>
+          <span class="text">Print this workbook</span>
+          <i class="fa fa-chevron-right"></i>
+        </a>
+
+
+        <div class="body-content">
+          <div class="static-content">
+            <h2 class="title-black">My Dream Today</h2>
+            <p>This is your Map of your Dreams. As you take the time to think about your dreams and hopes let your heart speak to you. Believe in what could be.</p>
+            <p>Let your heart tell you what it wants. Don't let the barriers, challenges, or fears interfere with knowing what your dreams are. Don't let negative messages interfere. Ask yourself the question</p>
+
+            
+            <h3 class="title-pink">What is my dream?</h3>
+            <p><strong>Dreams can start with the basics, like</strong><br> The need for food or a safe place to live. Dreams can be about a profession, "I want to be a doctor", about relationships, what we wish for our children, about starting over or just getting started.</p>
+
+            <div class="main-form-wrap">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="">  My Dream is </label>
+                    <input type="text" class="form-control" id="" placeholder="Tell us about your dream ">
+                  </div>
+                </div>
+                <a href="javascript:void(0)" class="link-brown">
+                  + Add more DREAMS
+                </a>
+              </form>
+            </div>
+            
+
+           
+          </div>
+        </div>
+
+        <div class="button-footers">
+          <div class="d-flex justify-content-between">
+            <button type="submit" class="action-btn-outline">
+              <span class="button-text">back</span>
+            </button>
+            <button type="submit" class="action-btn-fill">
+              go next
+            </button>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+    <!-- /#wrapper -->
+
+  </main>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <!-- bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script src="js/nice-select.js"></script>
+
+  <script src="js/custom.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+</body>
+
+</html>

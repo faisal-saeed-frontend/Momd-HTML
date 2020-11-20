@@ -1,0 +1,116 @@
+.clients-filter {
+    border-bottom: 1px solid #e5e5e5;
+    @include margin(0, 0, 30px, 0);
+    @include padding(0, 0, 10px, 0);
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            @include margin(0, 10px, 10px, 0);
+            a {
+                background: #e7ffbb;
+                color: #97ca3d;
+                font-size: 16px;
+                display: inline-block;
+                text-transform: uppercase;
+                @include padding(10px, 20px, 10px, 20px);
+                &:hover {
+                    background-color: $brand-color;
+                    color: $white-color;
+                }
+                &.active {
+                    background-color: $brand-color;
+                    color: $white-color;
+                }
+            }
+        }
+    }
+}
+
+.all-clients {
+    .title-head {
+        @include margin(0, 0, 50px, 0);
+        display: flex;
+        justify-content: space-between;
+
+        @include breakpoint(sm) {
+            flex-direction: column;
+        }
+
+        h2 {
+            font-size: 18px;
+            @include margin(0, 0, 20px, 0);
+        }
+        .search-cont {
+            @include margin(0, 0, 20px, 0);
+            
+            position: relative;
+            &:before {
+                position: absolute;
+                left: 0;
+                top: 4px;
+                content: "\f002";
+                font-family: "FontAwesome";
+                font-size: 20px;
+                color: #a7a9ac;
+            }
+            .form-control {
+                background: none;
+                border: 0;
+                border-bottom: 2px solid #a7a9ac;
+                box-shadow: none;
+                @include padding(0, 0, 0, 30px);
+                border-radius: 0;
+                height: 40px;
+            }
+        }
+    }
+
+    .clients-card {
+        background: $white-color;
+        border: 1px solid #a7a9ac;
+        @include border-radius(2px);
+        @include margin(0, 0, 30px, 0);
+        @include transition(all 0.6s ease);
+
+        &__header {
+            @include padding(20px, 20px, 20px, 20px);
+            border-bottom: 1px solid #a7a9ac;
+            display: flex;
+            justify-content: space-between;
+            h3 {
+                font-size: 18px;
+                color: $brand-second-color;
+                font-family: $font-secondary-en;
+            }
+            .user-id {
+                font-size: 14px;
+                color: $dark-grey-color;
+            }
+            .action-btn-outline {
+                @include padding(5px, 10px, 5px, 10px);
+            }
+        }
+        &__body {
+            @include padding(20px, 20px, 20px, 20px);
+
+            p {
+                font-size: 16px;
+                color: $dark-grey-color;
+                @include margin(0, 0, 10px, 0);
+            }
+            .grey-text {
+                color: $light-blue-color;
+                font-size: 12px;
+                text-transform: uppercase;
+                display: block;
+                @include margin(0, 0, 5px, 0);
+            }
+        }
+
+        &:hover {
+            @include card-hover-shadow;
+            @include transform(translateY(-5px));
+        }
+    }
+}

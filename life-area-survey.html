@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no  shrink-to-fit=no">
+  <meta name="format-detection" content="telephone=no">
+  <title>Map of my dreams </title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sass/style-en.css">
+</head>
+
+<body>
+  <main>
+
+
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div class="" id="sidebar-wrapper">
+        <div class="sidebar-heading">
+          <a href="">
+            <img src="images/logo-white.png" alt="">
+          </a>
+        </div>
+        <ul class="sidebar-menu">
+          <li class="menu-item">
+            <a class="menu-link active" href="javascript:void(0)">
+              <span class="icon icon-book">
+              </span>
+              My Workbook
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="javascript:void(0)">
+              <span class="icon icon-profile">
+              </span>
+              My Profile
+            </a>
+          </li>
+          <li class="menu-item ">
+            <a class="menu-link logout-link" href="javascript:void(0)">
+              <span class="icon icon-logout">
+              </span>
+              Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div class="mobile-header">
+          <div class="mobile-logo">
+            <a href="">
+              <img src="images/logo-white.png" alt="">
+            </a>
+          </div>
+          <button id="menu-toggle" type="button">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+        </div>
+
+        <div class="arrow-steps">
+          <div class="step complete">
+            <span class="item-text"> Tbd Later</span>
+            <span class="arrow-border"></span>
+          </div>
+          <div class="step complete">
+            <span class="item-text">My Dreams</span>
+            <span class="arrow-border"></span>
+          </div>
+          <div class="step current"> 
+            <span class="item-text">Life Area Survey</span>
+            <span class="arrow-border"></span>
+          </div>
+          <div class="step ">
+            <span class="item-text">Maps of My Dream</span>
+            <span class="arrow-border"></span>
+          </div>
+          <div class="step">
+            <span class="item-text">Care Plan</span>
+            <span class="arrow-border"></span>
+          </div>
+          <div class="step">
+            <span class="item-text">Tips to Success</span>
+            <span class="arrow-border"></span>
+          </div>
+        </div>
+
+        <a href="" class="print-button">
+          <i class="fa fa-lg fa-print"></i>
+          <span class="text">Print this workbook</span>
+          <i class="fa fa-chevron-right"></i>
+        </a>
+
+
+        <div class="body-content">
+          <div class="static-content life-area-survey">
+            <h2 class="title-black"> Where Am I Today?  </h2>
+
+            <blockquote class="blockquote blockquote-black blockquote-black-reverse">
+              <p class="mb-3">
+                “Do What You Can – With What You Have – Where You Are.”</p>
+              <footer class="blockquote-footer">Theodore Roosevelt </footer>
+            </blockquote>
+
+            <h3 class="title-pink"> Ok, now, knowing what you want, let's figure out how to get there.</h3>
+
+            <p>Just like a mechanic repairing a car, making your dreams come true requires the right tools. With the right tools and supports you are positioned for success. For example, if I don't have a car, or dependable buses, getting and keeping a job is likely impossible. Let’s understand the areas in your life that create challenges to your success and make a plan to deal with them.</p>
+            <p> The Life Area Survey on the next page does just that. In the example on the next page, the Dream is to be a teacher. The score 3 for food tells us this client usually can get by. The client identified that housing and income are priorities.</p>
+
+           
+          </div>
+        </div>
+
+        <div class="button-footers">
+          <div class="d-flex justify-content-between">
+            <button type="submit" class="action-btn-outline">
+              <span class="button-text">back</span>
+            </button>
+            <button type="submit" class="action-btn-fill">
+              go next
+            </button>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+    <!-- /#wrapper -->
+
+  </main>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <!-- bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script src="js/nice-select.js"></script>
+
+  <script src="js/custom.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+</body>
+
+</html>

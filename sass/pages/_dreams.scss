@@ -1,0 +1,142 @@
+.dreams-selection-cont {
+    @include margin(0, 0, 30px, 0);
+    @include padding(30px, 0, 30px, 70px);
+    background: url(../images/dream-selection-bg.png) no-repeat;
+    label {
+      color: $white-color;
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+    .select-dropdown {
+      position: relative;
+      .form-control {
+        background: none;
+        font-size: 22px;
+        border: 0;
+        box-shadow: none;
+        color: $white-color;
+        @include padding(0, 0, 0, 0);
+      }
+      option {
+        color: $black-color;
+      }
+      select {
+        height: 45px !important;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+  
+      &:after {
+        content: "\f107";
+        font-family: FontAwesome;
+        color: $white-color;
+        right: 20px;
+        top: 7px;
+        padding: 0 0 2px;
+        position: absolute;
+        pointer-events: none;
+        font-size: 22px;
+      }
+    }
+  }
+
+  .my-dreams {
+    @include margin(0, 0, 30px, 0);
+    .item {
+        background: $white-color;
+        border: 1px solid #a7a9ac;
+        @include border-radius(2px);
+        @include padding(20px, 20px, 20px, 20px);
+        height: 115px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include transition(all 0.6s ease);
+
+        &__title {
+            font-size: 16px;
+            color: $brand-second-color;
+        }
+        &__date {
+            color: $light-blue-color;
+            font-size: 13px;
+            font-weight: 300;
+        }
+        &__selected{
+          position: absolute;
+          right: 10px;
+          bottom: 10px;
+          color: $brand-color;
+          font-size: 20px;
+          display: block;
+        }
+       
+    }
+    .owl-nav {
+        position: absolute;
+        top: 40%;
+        width: 100%;
+  
+        .owl-prev {
+          position: absolute;
+          left: -30px;
+          background: none !important;
+  
+          &:before {
+            font-family: FontAwesome;
+            content: "\f104";
+            position: absolute;
+            left: 0;
+            font-size: 34px;
+            top: -10px;
+            border-radius: 50%;
+            height: 40px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            background: $white-color;
+            color: $brand-color;
+            @include transition(all 0.5s ease);
+            box-shadow: 0px 0px 10px rgba(#000, 0.5);
+          }
+          &:hover {
+            &:before {
+              background: $brand-color;
+              color: $white-color;
+            }
+          }
+        }
+        .owl-next {
+          position: absolute;
+          background: none !important;
+          right: -30px;
+  
+          &:before {
+            font-family: FontAwesome;
+            content: "\f105";
+            position: absolute;
+            right: 0;
+            font-size: 34px;
+            top: -10px;
+            border-radius: 50%;
+            height: 40px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            background: $white-color;
+            color: $brand-color;
+            @include transition(all 0.5s ease);
+            box-shadow: 0px 0px 10px rgba(#000, 0.5);
+          }
+  
+          &:hover {
+            &:before {
+              background: $brand-color;
+              color: $white-color;
+            }
+          }
+        }
+      }
+}

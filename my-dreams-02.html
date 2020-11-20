@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no  shrink-to-fit=no">
+  <meta name="format-detection" content="telephone=no">
+  <title>Map of my dreams </title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sass/style-en.css">
+</head>
+
+<body>
+  <main>
+
+
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div class="" id="sidebar-wrapper">
+        <div class="sidebar-heading">
+          <a href="">
+            <img src="images/logo-white.png" alt="">
+          </a>
+        </div>
+        <ul class="sidebar-menu">
+          <li class="menu-item">
+            <a class="menu-link active" href="javascript:void(0)">
+              <span class="icon icon-book">
+              </span>
+              My Workbook
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="javascript:void(0)">
+              <span class="icon icon-profile">
+              </span>
+              My Profile
+            </a>
+          </li>
+          <li class="menu-item ">
+            <a class="menu-link logout-link" href="javascript:void(0)">
+              <span class="icon icon-logout">
+              </span>
+              Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <button id="menu-toggle" type="button">
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
+        </button>
+
+        <div class="arrow-steps">
+          <div class="step complete">
+            <span class="item-text"> Tbd Later</span>
+            <span class="arrow-border"></span>
+          </div>
+          <div class="step current">
+            <span class="item-text">My Dreams</span>
+            <span class="arrow-border"></span>
+          </div>
+          <div class="step "> 
+            <span class="item-text">Life Area Survey</span>
+            <span class="arrow-border"></span>
+          </div>
+          <div class="step ">
+            <span class="item-text">Maps of My Dream</span>
+            <span class="arrow-border"></span>
+          </div>
+          <div class="step">
+            <span class="item-text">Care Plan</span>
+            <span class="arrow-border"></span>
+          </div>
+          <div class="step">
+            <span class="item-text">Tips to Success</span>
+            <span class="arrow-border"></span>
+          </div>
+        </div>
+
+        <a href="" class="print-button">
+          <i class="fa fa-lg fa-print"></i>
+          <span class="text">Print this workbook</span>
+          <i class="fa fa-chevron-right"></i>
+        </a>
+
+
+        <div class="body-content">
+          <div class="static-content">
+            <h2 class="title-black">How Do I Get There? </h2>
+
+            <blockquote class="blockquote-black">
+              <p class="mb-3">
+                “The Road to Success is Always Under Construction.”</p>
+              <footer class="blockquote-footer">Lily Tomlin </footer>
+            </blockquote>
+
+            <p>For each of your dreams begin to think about</p>
+            <h3 class="title-black-sm">“How do I get there?” and <br>"Who can help me and support my efforts?"</h3>
+
+            <article class="article-blue">
+              <h2 class="title">If you dream is a home, what do you have to do?</h2>
+              <ul>
+                <li>Save money for a down payment </li>
+                <li>Improve my credit score </li>
+                <li>Move to a different location </li>
+                <li> Ask my mom for help</li>
+              </ul>
+            </article>
+            <article class="article-yellow">
+              <h2 class="title">
+                If your dream is to be a professional basketball player what do you have to do?
+              </h2>
+              <ul>
+                <li>Stay in school </li>
+                <li>Get good grades to be eligible for the team </li>
+                <li>Practice + Be drug free </li>
+                <li>Go to college</li>
+                <li>Eat healthy </li>
+                <li>Ask my gym teacher for help</li>
+
+              </ul>
+            </article>
+            <article class="article-green">
+              <h2 class="title">
+                If your dream is to learn to read what do you have to do?
+
+              </h2>
+              <ul>
+
+                <li>Find a reading class </li>
+                <li>Do my homework </li>
+                <li>Take a bus to get there </li>
+
+              </ul>
+            </article>
+            <a href="" class="link-brown">
+              Learn to: ASK FOR HELP
+            </a>
+
+
+
+          </div>
+        </div>
+
+        <div class="button-footers">
+          <div class="d-flex justify-content-between">
+            <button type="submit" class="action-btn-outline">
+              <span class="button-text">back</span>
+            </button>
+            <button type="submit" class="action-btn-fill">
+              go next
+            </button>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+    <!-- /#wrapper -->
+
+  </main>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <!-- bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script src="js/nice-select.js"></script>
+
+  <script src="js/custom.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+</body>
+
+</html>

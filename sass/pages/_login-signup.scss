@@ -1,0 +1,118 @@
+/* login signup wrap */
+.login-signup-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    &:before {
+        position: absolute;
+        right: -250px;
+        bottom: -300px;
+        content: url(../images/bg-pattern.svg);
+    }
+    
+
+    @include breakpoint(xlg) {
+        height: 100vh;
+    }
+
+    .logo-holder {
+        @include margin(0, 0, 30px, 0);
+        display: flex;
+        justify-content: center;
+        img {
+            width: 328px;
+            height: 64px;
+        }
+    }
+    .form-wrap {
+        background: $white-color;
+        width: 382px;
+        border: 2px solid #e4e4e4;
+        @include padding(50px, 50px, 50px, 50px);
+        display: flex;
+        @include border-radius(4px);
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+
+        &:before {
+            position: absolute;
+            right: -45px;
+            top: 0;
+            content: url(../images/login-birds.svg);
+        }
+        .form-content{
+            position: relative;
+            z-index: 9;
+        }
+
+        @include breakpoint(sm) {
+            @include padding(20px, 20px, 20px, 20px);
+        }
+        .title {
+            font-size: 20px;
+            @include margin(0, 0, 10px, 0);
+            color: $brand-second-color;
+            font-family: $font-secondary-en;
+            font-weight: 500;
+            display: flex;
+            a{
+                color: $brand-second-color;
+                @include margin(0, 5px, 0, 0);
+            }
+        }
+        .sub-title {
+            font-size: 14px;
+            @include margin(0, 0, 30px, 0);
+            color: #4C4D4F;
+        }
+
+        .form-group {
+            @include margin(0, 0, 15px, 0);
+        }
+        .form-control {
+            background: $white-color;
+            border: 2px solid #dbdbdb;
+            @include border-radius(3px);
+            height: 45px;
+            box-shadow: none;
+            font-size: 14px;
+            color: #25292E;
+            &:focus {
+                border:2px solid $brand-color;
+                box-shadow: 0px 0px 10px 0px rgba(160, 92, 12, 0.35);
+            }
+        }
+        label {
+            text-transform: uppercase;
+            color: rgba(#A7A9AC, .7);
+            font-size: 13px;
+            font-weight: 400;
+            @include margin(0, 0, 10px, 0);
+        }
+
+        .forgot-link {
+            color: $brand-color;
+            font-size: 13px;
+            display: inline-block;
+            font-weight: 400;
+            @include margin(0, 0, 20px, 0);
+            &:hover {
+                color: $dark-grey-color;
+            }
+        }
+
+        .button-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include margin(0, 0, 40px, 0);
+        }
+    }
+}
